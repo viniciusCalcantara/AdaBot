@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <!--ERIOSVALDO E SUA LOJINHA-->
+        <pattern>PROBLEMA 4</pattern>
+        <template>        
+            As roupas de seu Eriosvaldo são lindas! Precisa de ajuda
+            para entender o programa?
+            <think><set name ="topic">PROBLEMA 4</set></think>
+        </template>
+    </category>
+
+   <category>
+        <pattern>^ PROBLEMA 4 ^</pattern>
+        <template><srai>PROBLEMA 4</srai></template>
+    </category>
+
+    <topic name="PROBLEMA 4">
+
+        <category>
+            <pattern>ESTRUTURAS CONDICIONAIS</pattern>
+            <template>
+                Temos uma condicional para cada tipo de venda. Se temos 4 vendas,
+                então o programa tem 4 condicionais.
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ CONDICIONAIS ^</pattern>
+            <template><srai>ESTRUTURAS CONDICIONAIS</srai></template>
+        </category>
+
+        <!--PERCENTUAL-->
+        <category>
+            <pattern>^ O QUE E PERCENTUAL</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ O QUE E CALCULO PERCENTUAL</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMO FAZER CALCULO PERCENTUAL</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMO FAZER O CALCULO PERCENTUAL</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMO FAZER O CALCULO DO PERCENTUAL</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMO FAZER O CALCULO DE PERCENTUAL</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CONDICIONAIS COM PERCENTUAL ^</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CONDICIONAIS COM ALGUM PERCENTUAL ^</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CONDICIONAIS COM CALCULO DE PERCENTUAL ^</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CONDICIONAIS COM CALCULO PERCENTUAL ^</pattern>
+            <template><srai>PERCENTUAL</srai></template>
+        </category>
+
+        <!--QUANTOS IFS TEM PERCENTUAL-->
+        <category>
+            <pattern>QUAIS TEM PERCENTUAL</pattern>
+            <template>São exatamente três. São aquelas que tem juros, ou desconto.</template>
+        </category>
+
+        <category>
+            <pattern>^ QUAIS TEM CALCULO^</pattern>
+            <template><srai>QUAIS TEM PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUAIS TEM CALCULO PERCENTUAL^</pattern>
+            <template><srai>QUAIS TEM PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUAIS TEM CALCULO DE PERCENTUAL^</pattern>
+            <template><srai>QUAIS TEM PERCENTUAL</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUAIS POSSUEM ^</pattern>
+            <template>QUAIS TEM PERCENTUAL</template>
+        </category>
+
+        <category>
+            <pattern>^ QUAIS POSSUEM CALCULO ^</pattern>
+            <template>QUAIS TEM PERCENTUAL</template>
+        </category>
+    </topic>
+</aiml>

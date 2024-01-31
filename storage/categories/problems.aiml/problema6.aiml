@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>PROBLEMA 6</pattern>
+        <template>
+                Paula sabe brincar com expressões!
+                Você sabe o que são expressões?
+                <think><set name="topic">PROBLEMA 6</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ PROBLEMA 6 ^</pattern>
+        <template><srai>PROBLEMA 6</srai></template>
+    </category>    
+
+    <topic name="PROBLEMA 6">
+        <!-- O que são expressões em programação?-->
+
+        <category>
+            <pattern>O QUE <regex template="sao" /> <regex template="expressoes" /></pattern>
+            <template>
+                Expressões são combinações de valores, variáveis e operadores 
+                que resultam em um único valor. Exemplos incluem cálculos matemáticos ou lógicos.
+            </template>
+        </category>
+        
+        <category>
+            <pattern>^ O QUE <regex template="sao" /> <regex template="expressoes" /> ^</pattern>
+            <template><srai>O QUE SAO EXPRESSOES</srai></template>
+        </category>
+
+        <!--Como representar as porcentagens em código?-->
+        <category>
+            <pattern>COMO REPRESENTAR AS PORCENTAGENS EM CODIGO</pattern>
+            <template>
+                As porcentagens podem ser representadas como decimais em cálculos. 
+                Por exemplo, 21,6% é representado como 0,216.
+            </template>
+        </category>
+
+        <category>
+            <pattern>COMO REPRESENTAR AS PORCENTAGENS EM CÓDIGO</pattern>
+            <template><srai>COMO REPRESENTAR AS PORCENTAGENS EM CODIGO</srai></template>
+        </category>
+
+        <!--Como calcular a quantidade de jovens em cada categoria?-->
+        <category>
+            <pattern>COMO CALCULAR A QUANTIDADE DE JOVENS</pattern>
+            <template>
+                Paula deve usar expressões matemáticas para multiplicar a porcentagem 
+                de cada categoria pelo total de jovens entrevistados. Exemplo: quantidade_somente_estuda = 0,216 * 2300.
+            </template>
+        </category>
+    </topic>
+</aiml>

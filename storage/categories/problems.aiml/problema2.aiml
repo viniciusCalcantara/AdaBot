@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <!--pH de soluções-->
+        <pattern>PROBLEMA 2</pattern>
+        <template>
+            Eu adoro química! Você precisa deteminar quantos
+            ifs joão usou em seu código. Em que posso te ajudar?
+            <think><set name ="topic">PROBLEMA 2</set></think>
+        </template>
+    </category>
+
+   <category>
+        <pattern>^ PROBLEMA 2 ^</pattern>
+        <template><srai>PROBLEMA 2</srai></template>
+    </category>
+
+    <topic name ="PROBLEMA 2">
+        <!--O que são estruturas condicionais e como funcionam?-->
+        <category>
+            <pattern>ESTRUTURAS CONDICIONAIS</pattern>
+            <template>
+                Estruturas condicionais, como if, são usadas para tomar decisões em um programa. 
+                Elas executam um bloco de código apenas se uma condição for verdadeira.
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ CONDICIONAIS ^</pattern>
+            <template><srai>ESTRUTURAS CONDICIONAIS</srai></template>
+        </category>
+
+        <!--Como saber quantos "ifs" são necessários?-->
+        <category>
+            <pattern>QUANTOS IFS</pattern>
+            <template>
+                O número de "ifs" depende do número de condições a serem verificadas. 
+                Cada possível classificação de solução (ácida, básica ou neutra) precisa de um "if".
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ QUANTOS IFS ^</pattern>
+            <template><srai>QUANTOS IFS</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUANTOS IF ^</pattern>
+            <template><srai>QUANTOS IFS</srai></template>
+        </category>
+        
+        <!--Qual será a saída se o pH for 5?-->
+        <category>
+            <pattern>PH 5</pattern>
+            <template>
+                A saída será "Ácida", pois o pH é menor que 7.
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ PH 5 ^</pattern>
+            <template><srai>PH 5</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ PH FOR 5 ^</pattern>
+            <template><srai>PH 5</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ PH IGUAL 5 ^</pattern>
+            <template><srai>PH 5</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ PH FOR IGUAL 5 ^</pattern>
+            <template><srai>PH 5</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ PH FOR IGUAL A 5 ^</pattern>
+            <template><srai>PH 5</srai></template>
+        </category>
+    </topic>
+</aiml>

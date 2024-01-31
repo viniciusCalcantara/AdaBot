@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <category>
+        <pattern>PROBLEMA 8</pattern>
+        <template>
+            Nunca joguei Tri-du... Entretanto eu sei ordenar
+            objetos perfeitamente!
+
+            <think><set name="topic">PROBLEMA 8</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ PROBLEMA 8 ^</pattern>
+        <template><srai>PROBLEMA 8</srai></template>
+    </category>
+
+    <topic name="PROBLEMA 8">
+        <!--COMO MODELAR-->
+        <category>
+            <pattern>REPRESENTAR</pattern>
+            <template>
+                Uma altenativa seria fazer uma lista de inteiros com os valores das cartas
+                para cada jogador.
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ REPRESENTAR ^</pattern>
+            <template><srai>REPRESENTAR</srai></template>
+        </category>
+
+        <!--COMO FAZER A ORDENACAO-->
+        <category>
+            <pattern>ORDENAR</pattern>
+            <template>
+                Existem vários algoritmos de ordenção. Você poderia
+                pesquisar sobre o bublle sort, mas como são apenas três
+                números para cada jogar você pode ordenar na mão
+            </template>
+        </category>
+
+        <!--QUANTAS VARIAVEIS DE ENTRADA-->
+        <category>
+            <pattern>QUANTAS <regex template="variaveis" /> DE ENTRADA</pattern>
+            <template>
+                Temos 10 jogadorese, e para cada um deles temos três cartas. Temos
+                trinta dados que devem ser representados de alguma forma.
+                <srai>MODELAR</srai>
+            </template>
+        </category>
+
+        <!--QUANTAS VARIAVEIS DE SAIDA-->
+        <category>
+            <pattern>QUANTAS <regex template="variaveis" /> DE <regex template="saida" /></pattern>
+            <template></template>
+        </category>
+
+        <!--O QUE SAO AS VARIAVEIS DE SAIDA-->
+        <category>
+            <pattern>O QUE <regex template="sao" /> AS <regex template="variaveis" /> DE <regex template="saida" /></pattern>
+            <template> 
+                A posição do vencedor, o primeiro lugar,  seria uma variável de saída.
+            </template>
+        </category>
+
+        <!--COMO COMPARAR AS PONTUACOES-->
+        <category>
+            <pattern>COMPARAR PONTUACAO</pattern>
+            <template>
+                <random>
+                    <li>
+                        Pode-se usar estruturas condicionais para comparar as 
+                        somas das cartas dos jogadores e determinar o vencedor. 
+                        Exemplo: se soma_jogador1 > soma_jogador2, então jogador1 é o vencedor.
+                    </li>
+                    <li>
+                        Imagine que as pontuações dos jogadores são como uma fila de pessoas, 
+                        cada uma com um número representando sua pontuação. Você pode "olhar" 
+                        para cada pessoa na fila, uma por uma, para ver quem tem o número mais alto. 
+                        É como organizar a fila do maior para o menor e ver quem está na frente!
+                    </li>
+                    <li>
+                        Pense em um jogo onde você tem que descobrir quem tem o maior número de pontos. 
+                        Você pode começar com o primeiro jogador e comparar seu número com o do próximo jogador. 
+                        Se o próximo jogador tiver mais pontos, ele se torna o novo "campeão" temporário. 
+                        Continue assim até que todos tenham sido comparados e você encontrará o campeão final!
+                    </li>
+                    <li>
+                        Imagine ter uma caixinha onde você pode guardar o nome de cada jogador e seus pontos. 
+                        Você vai passando por cada jogador, coloca o nome dele na caixa junto com os pontos, 
+                        e depois compara com o que já está lá. Quem tiver mais pontos "ganha" a caixa, até 
+                        você descobrir quem é o grande vencedor no final.
+                    </li>
+                    <li>
+                        Uma maneira bem legal de descobrir quem ganhou é usar uma "varinha mágica" do computador 
+                        que olha todos os números de uma vez e diz qual é o maior. É como se você tivesse uma função
+                        especial que já sabe quem tem a maior soma das cartas, te dizendo direto quem é o vencedor sem
+                        precisar comparar um por um.
+                    </li>
+                </random>
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ COMPARAR <regex template="pontuacao" /> ^</pattern>
+            <template><srai>COMPARAR PONTUACAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMPARAR A <regex template="pontuacao" /> ^</pattern>
+            <template><srai>COMPARAR PONTUACAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMPARAR <regex template="pontuacoes" /> ^</pattern>
+            <template><srai>COMPARAR PONTUACAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ COMPARAR AS <regex template="pontuacoes" /> ^</pattern>
+            <template><srai>COMPARAR PONTUACAO</srai></template>
+        </category>
+    </topic>
+</aiml>

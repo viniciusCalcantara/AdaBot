@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <!--REINOS-->
+        <pattern>PROBLEMA 3</pattern>
+        <template>        
+            Você está interessado em saber após quantos anos a
+            população de Javalândia ultrapassará a de Pythonlândia. 
+            Como posso ajudar nisso?
+            <think><set name ="topic">PROBLEMA 3</set></think>
+        </template>
+    </category>
+
+   <category>
+        <pattern>^ PROBLEMA 3 ^</pattern>
+        <template><srai>PROBLEMA 3</srai></template>
+    </category>
+    
+    <topic name="PROBLEMA 3">
+        <!--Como calcular o crescimento populacional ao longo dos anos?-->
+        <category>
+            <pattern>CALCULO</pattern>
+            <template>
+                Você pode usar essa fórmula:
+                populacao_futura = populacao_inicial * (1 + taxa_crescimento)^anos,
+                em que a taxa de crescimento é um percentual, ou seja, um número entre zero e 1.
+            </template>
+        </category>
+
+        <category>
+            <pattern>CALCULAR</pattern>
+            <template><srai>CALCULO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CALCULO ^</pattern>
+            <template><srai>CALCULO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CÁLCULO ^</pattern>
+            <template><srai>CALCULO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ CONTA ^</pattern>
+            <template><srai>CALCULO</srai></template>
+        </category>
+
+        <!--Ultrapassar a população-->
+        <category>
+            <pattern>SOLUCAO</pattern>
+            <template>
+                É possível resolver iterativamente com um loop while,
+                atualizando a população dos reinos a cada ano. A condição
+                de parada será quando a população de Javalândia ultrapassar a
+                de Pythonlândia. 
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ SOLUCÃO ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ SOLUCAO ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ SOLUÇÃO ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ SOLUÇAO ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ RESOLVER ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+        
+        <category>
+            <pattern>^ SOLUCIONAR ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ FAZER A QUESTÃO ^</pattern>
+            <template><srai>SOLUCAO</srai></template>
+        </category>
+    </topic>
+</aiml>

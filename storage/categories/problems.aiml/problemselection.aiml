@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <!-- 
+    <category>
+        <pattern>PROBLEMA *</pattern>
+        <template>
+            Você selecionou o problema número <star/>.
+            <think><set name="topic">PROBLEMA <star/></set></think>
+        </template>
+    </category>
+    -->
+</aiml>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>SET TOPIC</pattern>
+        <template>set topic command with no option</template>
+    </category>
+
+    <category>
+        <pattern>OI AMIGO</pattern>
+        <template>oi meu amigo</template>
+    </category>
+
+    <category>
+        <pattern>SET TOPIC *</pattern>
+        <template>
+            <think><set name ="topic"><star /></set></think>
+        </template>
+    </category>
+</aiml>

@@ -130,7 +130,7 @@ console:
 
   bots:
     bot:
-      initial_question: "\nOlá, meu nome é adabot e eu estou aqui para ajudá-lo a resolver problemas.\n\nINTRUÇÕES:\n - A consulta a dado problema deve ser feita da seguinte forma:\n\n    1) 'Problema X', em que X é o número do problema.\n\n    2) Após isso deve-se fornecer uma opção de consulta:\n\n        Ex: 'X', em que X é o tipo de consulta.\n        Há 5 tipos de consulta:\n        - ENTRADA\n        - SAÍDA\n        - ENUNCIADO\n        - SOLUÇÃO\n        - IMPLEMENTAÇÃO\n\n    3) Ao longo de nossa conversa vou lhe sugerir alternativas e seus respectivos nomes para que dessa forma eu saiba onde posso te ajudar.\n\n - Caso não tenha dúvidas sobre um problema, tire um tempo para conversar comigo :)!\n"
+      initial_question: "\nOlá, meu nome é adabot e eu estou aqui para ajudá-lo a resolver problemas. \n\nCaso não tenha nenhuma dúvida tire um tempo pra conversar comigo :)."
       initial_question_srai: YINITIALQUESTION
       default_response: Desculpa, eu não tenho resposta para isso!
       default_response_srai: YEMPTY

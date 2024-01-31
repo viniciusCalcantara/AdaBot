@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!--Jornada à faculdade-->
+    <category>
+        <pattern>PROBLEMA 7</pattern>
+        <template>
+            <random>
+                <li>Acho que else devem querer começar a estudar logo!</li>
+                <li>Os estuadntes devem estar com pressa!</li>
+                <li>Em Maceió o transporte público não é la essas coisas...</li>
+                <li>Alguns motoristas voam!</li>
+            </random>
+            Em que posso te ajudar?
+            <think><set name="topic">PROBLEMA 7</set></think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>^ PROBLEMA 7 ^</pattern>
+        <template><srai>PROBLEMA 7</srai></template>
+    </category>
+
+    <topic name="PROBLEMA 7">
+        <!--O QUE SÃO ESTRUTURAS DE REPETIÇÃO-->
+
+        <category>
+            <pattern>ESTRUTURAS DE REPETICAO</pattern>
+            <template>
+                Estruturas de repetição são usadas para executar um 
+                bloco de código várias vezes. No caso, elas são usadas 
+                para processar os dados de 100 estudantes.
+            </template>
+        </category>
+        <category>
+            <pattern>ESTRUTURAS DE <regex template="repeticao" /></pattern>
+            <template><srai>ESTRUTURAS DE REPETICAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ O QUE <regex template="sao" /> ESTRUTURAS DE <regex template="repeticao" /> ^</pattern>
+            <template><srai>ESTRUTURAS DE REPETICAO</srai></template>
+        </category>
+
+        <!--QUANTAS ESTRUTURAS DE REPETIÇÃO-->
+        <category>
+            <pattern>QUANTAS ESTRUTURAS DE REPETICAO</pattern>
+            <template>
+                Nesse caso, só é necessário uma estrutura de repetição para processar
+                a entrada.
+            </template>
+        </category>
+        
+        <category>
+            <pattern>QUANTAS ESTRUTURAS DE <regex template="repeticao" /></pattern>
+            <template><srai>QUANTAS ESTRUTURAS DE REPETICAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUANTAS ESTRUTURAS DE <regex template="repeticao" /> ^</pattern>
+            <template><srai>QUANTAS ESTRUTURAS DE REPETICAO</srai></template>
+        </category>
+
+        <!--VARIÁVEIS DE ENTRADA-->
+        <category>
+            <pattern>VARIAVEIS DE ENTRADA</pattern>
+            <template>
+                <random>
+                    <li>São os dias da semana e o tempo de caminhada</li>
+                    <li>Segunda, terça, quarta... e o tempo de caminhada também</li>
+                    <li>Claramente, segunda é uma variável e tempo que você caminha é outra</li>
+                    <li>O tempo de caminhada e os dias de segunda a sexta!</li>
+                    <li>O tempo de caminhada e o dia da semana seriam variáveis de entrada.</li>
+                </random>
+            </template>
+        </category>
+
+        <category>
+            <pattern><regex template="variaveis" /> DE ENTRADA</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUAIS AS <regex template="variaveis" /> DE ENTRADA ^</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+        
+        <category>
+            <pattern>^ QUAIS <regex template="sao" /> as <regex template="variaveis" /> DE ENTRADA ^</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUANTAS <regex template="variaveis" /> DE ENTRADA ^</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUANTAS <regex template="sao" /> <regex template="variaveis" /> DE ENTRADA ^</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ QUANTAS <regex template="sao" /> AS <regex template="variaveis" /> DE ENTRADA ^</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+        
+        <category>
+            <pattern>^ QUANTAS <regex template="variaveis" /> DE ENTRADA SAO ^</pattern>
+            <template><srai>VARIAVEIS DE ENTRADA</srai></template>
+        </category>
+    </topic>
+</aiml>

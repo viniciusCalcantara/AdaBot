@@ -1,0 +1,7 @@
+sao : ^S[A|Ã|ã]O$
+expressoes : ^EXPRESS[O|Õ|õ]ES$
+repeticao : ^REPETI[C|Ç][Ã|ã|A|a]O$
+variaveis : ^VARI[Á|A|á|a]VEIS$
+saida : ^SA[Í|í|I|i]DA$
+pontuacao : ^PONTUA[C|Ç][A|Ã|a|ã]O$
+pontuacoes : ^PONTUA[C|Ç][O|Õ|o|õ]ES$

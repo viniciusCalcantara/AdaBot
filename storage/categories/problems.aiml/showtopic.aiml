@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>SHOW TOPIC</pattern>
+        <template>O tópico atual é <get name="topic" /></template>
+    </category>
+</aiml>
+
+
+
+

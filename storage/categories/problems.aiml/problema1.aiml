@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <!-- Celular novo de lucas-->
+        <pattern>PROBLEMA 1</pattern>
+        <template>
+            hmmm... Lucas fez uma programa, e você precisa
+            descobrir quais passos ele utilizou. Qual sua dúvida?
+            <think><set name ="topic">PROBLEMA 1</set></think>
+        </template>
+    </category>
+
+   <category>
+        <pattern>^ PROBLEMA 1 ^</pattern>
+        <template><srai>PROBLEMA 1</srai></template>
+    </category>
+
+    <topic name ="PROBLEMA 1">
+        <!--Como calcular um desconto percentual em um valor?-->
+        <category>
+            <pattern>DESCONTO</pattern>
+            <template>
+                Para calcular um desconto percentual de X%, você multiplica o valor do celular
+                por X e depois divide por 100. simples não?
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ DESCONTO ^</pattern>
+            <template><srai>DESCONTO</srai></template>
+        </category>
+
+        <!--O que significa sequência de passos?-->
+        <category>
+            <pattern>PASSOS</pattern>
+            <template>
+                A sequência de passos refere-se aos passos individuais 
+                ou operações matemáticas que você deve realizar para calcular 
+                o desconto.
+            </template>
+        </category>
+
+        <category>
+            <pattern>^ PASSOS ^</pattern>
+            <template><srai>PASSOS</srai></template>
+        </category>
+        
+        <!--Como representar isso em código?-->
+        <category>
+            <pattern>IMPLEMENTACAO</pattern>
+            <template>
+                Para implementar considere:
+                valor_com_desconto = valor_original - (valor_original x percentual_desconto) / 100.
+            </template>
+        </category>
+
+        <!--implementaçao-->
+        <category>
+            <pattern>^ IMPLEMENTAÇAO ^</pattern>
+            <template><srai>IMPLEMENTACAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ IMPLEMENTAÇÃO ^</pattern>
+            <template><srai>IMPLEMENTACAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ IMPLEMENTACAO ^</pattern>
+            <template><srai>IMPLEMENTACAO</srai></template>
+        </category>
+
+        <category>
+            <pattern>^ IMPLEMENTACÃO ^</pattern>
+            <template><srai>IMPLEMENTACAO</srai></template>
+        </category>
+    </topic>
+</aiml>

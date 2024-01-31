@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+    <!--TRATANDO A PISCINA-->
+    <category>
+        <pattern>PROBLEMA 5</pattern>
+        <template>
+            Eu adoro piscina! Você não sabe quanto de produto precisamos para limpa-la?
+            <think><set name ="topic">PROBLEMA 5</set></think>
+        </template>
+
+        <category>
+            <pattern>^ PROBLEMA 5 ^</pattern>
+            <template><srai>PROBLEMA 5</srai></template>
+        </category>
+    </category>
+    
+    <topic name="PROBLEMA 5">
+        
+        <category>
+            <pattern>COMO CALCULAR O VOLUME</pattern>
+            <template>
+                O volume é calculado multiplicando a área da base pela altura. 
+                No caso de uma piscina retangular, seria volume = comprimento * largura * altura.
+            </template>
+        </category>
+
+        <category>
+            <pattern>COMO CONVERTER PARA MILILITROS</pattern>
+            <template>
+                1 litro é igual a 1.000 mililitros. Portanto, você multiplica o número de
+                litros por 1.000 para obter a quantidade em mililitros.
+            </template>
+        </category>
+        
+        <category>
+            <pattern>COM CNOVERTER METROS CUBICOS PARA LITROS</pattern>
+            <template>
+                1 metro cuúbico corresponde a 1000L, então basta você multipiblicar
+                o volume em metros cúbicos  por 1000.
+            </template>
+        </category>
+
+        <category>
+            <pattern>COMO IMPLEMENTAR</pattern>
+            <template>
+                Em código, seria algo como quantidade_mililitros = volume_piscina * 1.000 * quantidade_produto_por_litro.
+                em que volume_piscina está em metros cúbicos.
+            </template>
+        </category>
+    </topic>
+</aiml>
